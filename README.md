@@ -1,6 +1,6 @@
 # Runner Vault Setup Wizard
 
-A standalone Cloudflare Worker that provisions a user's fork of
+A standalone Cloudflare Worker, deployed at https://vault-setup-wizard.amin3532.workers.dev, that provisions a user's fork of
 [`aminsh35322088-ctrl/GitHub-runner-vault`](https://github.com/aminsh35322088-ctrl/GitHub-runner-vault).
 
 The Wizard uses a central GitHub App for GitHub identity, fork discovery, repository access,
@@ -30,9 +30,9 @@ install it on their own fork.
 
 **General**
 - App name: `Runner Vault Setup` (or another globally unique name).
-- Homepage URL: the deployed Wizard Worker URL.
-- Callback URL: `https://YOUR-WIZARD.workers.dev/api/github/callback`.
-- Setup URL: `https://YOUR-WIZARD.workers.dev/api/github/installed`.
+- Homepage URL: `https://vault-setup-wizard.amin3532.workers.dev`.
+- Callback URL: `https://vault-setup-wizard.amin3532.workers.dev/api/github/callback`.
+- Setup URL: `https://vault-setup-wizard.amin3532.workers.dev/api/github/installed`.
 - Webhook: inactive; no webhook events are required.
 - User authorization callback must use the callback URL above.
 
